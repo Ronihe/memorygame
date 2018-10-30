@@ -40,7 +40,3 @@
     background: blue;
   }
   
-  .card__face--back {
-    transform: rotateY(180deg);
-  }
-  
