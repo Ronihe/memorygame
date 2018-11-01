@@ -63,7 +63,7 @@ function win(){
 function flip(card){  
   if(flipCount === 0){
     if(card.classList.contains("is-flipped")){
-      card.removeEventListener("click", toggleCard);
+      return;
     }else{
     toggleCard(card);
     flipCount++;
@@ -72,7 +72,7 @@ function flip(card){
     viewTotal()}
   }else if(flipCount === 1){
     if(card.classList.contains("is-flipped")){
-      card.removeEventListener("click", toggleCard);
+      return;
     }else{
       toggleCard(card);
       subFlipped.push(card);
