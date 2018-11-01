@@ -77,9 +77,12 @@ function flip(card){
       toggleCard(card);
       subFlipped.push(card);
       totalClick++;
+      flipCount++;
       viewTotal();
       check();
     }
+  }else if (flipCount === 2){
+    return;
   }
 }
 
